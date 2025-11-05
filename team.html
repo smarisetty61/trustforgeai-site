@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
 <nav>
      <a href="index.html">Home</a>
      <a href="about.html">About</a>
@@ -12,26 +13,88 @@
      <a href="news.html">News</a>
      <a href="faq.html">Faq</a>
     </nav>
- <link rel="stylesheet" href="style.css" />
-  <meta charset="UTF-8">
-  <title>Page Under Construction</title>
+
+  <title>Leadership Team</title>
+<link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      margin: 0;
+      padding: 20px;
 
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
+    .team-section {
+      max-width: 1000px;
+      margin: auto;
     }
-    p {
-      font-size: 1.2em;
+    .leader-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .leader-photo {
+      flex: 1 1 100px;
+      max-width: 100px;
+      margin-right: 20px;
+    }
+    .leader-photo img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .leader-bio {
+      flex: 2 1 500px;
+    }
+    .leader-bio h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #333;
+    }
+    .leader-bio p {
+      font-size: 1em;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .leader-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .leader-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🚧 Under Construction 🚧</h1>
-  <p>Team page is currently being built. Please check back soon!</p>
+  <div class="team-section">
+    <h1>Leadership Team</h1>
+
+    <div class="leader-row">
+      <div class="leader-photo">
+        <img src="assets/leader1.jpg" alt="Leader 1">
+      </div>
+      <div class="leader-bio">
+        <h2>Suresh Marisetty</h2>
+        <p>Suresh is the Founder & Chief Technology Officer with over 20 years of experience in cloud infrastructure, mobile, embedded, IoT, and AI systems. He brings deep expertise in cybersecurity, resiliency, baremetal firmware, and system hardware architecture. Suresh leads innovation across platform architecture and technical strategy, with a track record of enabling multiple end-to-end, industry-shaping foundational solutions over the years.</p>
+      </div>
+    </div>
+
+    <div class="leader-row">
+      <div class="leader-photo">
+        <img src="assets/leader2.png" alt="Leader 2">
+      </div>
+      <div class="leader-bio">
+        <h2>Rohit Jain</h2>
+        <p>Rohit is the Director of Engineering, specializing in firmware, telemetry, and platform assurance. He drives cross-functional collaboration and ecosystem outreach for scalable solutions.</p>
+      </div>
+    </div>
+
+    <!-- Add more leader rows as needed -->
+
+  </div>
 </body>
 </html>
