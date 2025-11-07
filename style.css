@@ -25,6 +25,10 @@ section {
   margin: 40px auto;
   max-width: 600px;
 }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
 
 h2 {
   color: #00bfff;
@@ -47,5 +51,17 @@ nav a {
   color: yellow;
   font-weight: bold;
 }
+
+p {
+    font-size: 1.2em;
+  }
+
+.highlight {
+  background-color: green;
+  padding: 10px;
+  border-left: 4px solid #0077cc;
+ }
+
+
 
 
