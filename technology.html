@@ -14,29 +14,83 @@
     </nav>
  <link rel="stylesheet" href="style.css" />
   <meta charset="UTF-8">
-  <title>Page Under Construction</title>
-  <style>
+  <title>Technology</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
+      color: white;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .image-container {
       text-align: center;
+      margin: 30px 0;
+    }
+    .image-container img {
+      width: 250px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 20px;
+    }
 
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.2em;
-    }
   </style>
 </head>
 <body>
-  <h1>🚧 Under Construction 🚧</h1>
-  <p>Technology page is currently being built. Please check back soon!</p>
-<footer>
-    &copy; 2025 TrustForgeAI&trade;. All rights reserved.
+  <header>
+    <h1>Technology Overview</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Federated Telemetry Pipeline</h2>
+      <p>
+        TrustForgeAI integrates UEFI, OpenBMC, and Caliptra RoT to enable secure, scalable telemetry for federated AI workloads. The diagram below illustrates how platform events flow through firmware layers, are logged via Redfish schema extensions, and verified by federated trust controllers.
+      </p>
+      <div class="image-container">
+        <img src="assets/telemetry-diagram.png" alt="Federated AI Telemetry Pipeline Diagram" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Layered Security Architecture</h2>
+      <p>
+        Our platform security stack spans AI-enhanced runtime assurance, trusted display and connectivity protocols, and hardware-rooted trust. The diagram below illustrates this layered approach:
+      </p>
+      <div class="image-container">
+        <img src="assets/security-stack.png" alt="AI-Enabled Security Stack Diagram" />
+      </div>
+      <ul>
+        <li><strong>AI-Enabled Security:</strong> Runtime anomaly detection, model integrity enforcement</li>
+        <li><strong>CXL | TDISP:</strong> Trusted interconnect and display protocols for secure data flow</li>
+        <li><strong>PSA Level 3 | Caliptra RoT:</strong> Hardware-based attestation and cryptographic identity binding</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Federated Learning for Runtime Security</h2>
+      <p>
+        We apply federated learning principles to platform security by distributing model updates and training signals across CPUs, GPUs, and BMCs. This architecture ensures secure, decentralized learning without exposing raw data.
+      </p>
+      <div class="image-container">
+        <img src="assets/federated-learning-security.png" alt="Federated Learning Runtime Security Diagram" />
+      </div>
+      <ul>
+        <li><strong>Model Update Distribution:</strong> Secure propagation of learned parameters across nodes</li>
+        <li><strong>Training Signals:</strong> PCIe/CXL-based telemetry inputs for continuous learning</li>
+        <li><strong>Platform RoT:</strong> Central trust anchor validating model integrity and telemetry authenticity</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 1985 TrustForgeAI&trade;. All rights reserved.
   </footer>
 </body>
 </html>
-
-
