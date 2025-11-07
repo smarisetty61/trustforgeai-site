@@ -5,6 +5,7 @@ body {
   color: #ffffff;
   text-align: center;
   padding-top: 50px;
+  padding: 20px;
 }
 
 .logo {
@@ -38,12 +39,13 @@ a {
   color: #00bfff;
   text-decoration: none;
 }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      color: white;
+    }
 
-footer {
-  margin-top: 60px;
-  font-size: 0.9em;
-  color: #888;
-}
 
 nav a {
   margin: 0 15px; /* Adds horizontal spacing */
@@ -61,6 +63,7 @@ p {
   padding: 10px;
   border-left: 4px solid #0077cc;
  }
+
 
 
 
