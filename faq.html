@@ -8,27 +8,102 @@
      <a href="technology.html">Technology</a>
      <a href="team.html">Team</a>
      <a href="contact.html">Contact</a>
-     <a href="careers_1.html">Careers</a>
+     <a href="careers.html">Careers</a>
      <a href="news.html">News</a>
      <a href="faq.html">Faq</a>
     </nav>
  <link rel="stylesheet" href="style.css" />
-  <meta charset="UTF-8">
-  <title>Page Under Construction</title>
+<title>FAQ </title>
   <style>
+    body {
+      color: #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+    .faq-item {
+      background-color: #ffffff;
+      padding: 20px;
+      border-left: 4px solid #0077cc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .faq-item h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+    .faq-item p {
+      margin: 10px 0 0;
+    }
 
   </style>
 </head>
 <body>
-  <h1>🚧 Under Construction 🚧</h1>
-  <p>FAQ page is currently being built. Please check back soon!</p>
-<footer>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+  </header>
+  <main>
+    <section>
+      <div class="faq-item">
+        <h3>What is Caliptra and how does it enhance platform trust?</h3>
+        <p>Caliptra is an open-source Root of Trust (RoT) IP block that provides cryptographic measurements, attestation, and identity binding for secure boot and runtime assurance. TrustForgeAI integrates Caliptra with OpenBMC and UEFI to enable federated trust across distributed AI platforms.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does your platform support secure telemetry?</h3>
+        <p>We use Redfish schema extensions, SPDM/EAT attestation, and telemetry anchors to stream verified platform events. These streams are policy-enforced and cryptographically validated to ensure runtime integrity.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What firmware layers do you support?</h3>
+        <p>We support UEFI, OpenBMC, and Caliptra RoT integration. Our event schemas and telemetry pipelines span boot-time, runtime, and recovery flows across these layers.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can your telemetry framework be integrated with existing cloud infrastructure?</h3>
+        <p>Yes. Our telemetry anchors and Redfish extensions are cloud-agnostic and designed to integrate with Azure, AWS, and on-prem observability stacks.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What does the Federated AI Telemetry Framework include?</h3>
+        <p>It includes schema templates, attestation pipelines, Redfish extensions, and visual dashboards for monitoring AI workload integrity and platform trust.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you offer consulting or integration support?</h3>
+        <p>Yes. We provide strategic guidance, schema customization, and hands-on integration support for platform vendors, hyperscalers, and AI infrastructure teams.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I apply for a technical role?</h3>
+        <p>Visit our <a href="/careers_1.html">Careers page</a> to view open positions and submit your application securely.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are you open to industry collaborations?</h3>
+        <p>Absolutely. We actively collaborate with standards bodies, silicon vendors, and cloud providers to advance platform assurance and federated trust.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is Arm PSA and how does it relate to your platform?</h3>
+        <p>Arm’s Platform Security Architecture (PSA) is a framework for designing and verifying secure IoT and embedded systems. TrustForgeAI aligns with PSA principles by integrating Caliptra RoT, secure boot, and attestation pipelines that support PSA certification and NIST 8259 compliance.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you support PSA Certified workflows?</h3>
+        <p>Yes. Our platform architecture and event schemas are designed to support PSA Certified Level 1 and Level 2 workflows, including secure provisioning, firmware measurement, and runtime telemetry.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
   </footer>
-
 </body>
-
 </html>
-
-
-
