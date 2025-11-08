@@ -4,17 +4,13 @@ body {
   background-color: #0b1c2c;
   color: #ffffff;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   padding: 20px;
 }
 
 .logo {
   width: 120px;
   margin-top: 20px;
-}
-
-header {
-  padding: 20px;
 }
 
 .tagline {
@@ -32,19 +28,30 @@ h1 {
   }
 
 h2 {
-  color: #00bfff;
+     margin-top: 0;
+     color: black;
+     font-size: 1.25em;
 }
+
+
+h3 {
+      margin-top: 0;
+      color: #0077cc;
+      text-align: center;
+    }
+
 
 a {
   color: #00bfff;
   text-decoration: none;
 }
-    header, footer {
+
+header, footer {
       text-align: center;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 0px;
+      margin-top: 0px;
       color: white;
-      font-size: 0.9em
+     font-size: 0.9em
     }
 
 
@@ -57,16 +64,32 @@ nav a {
 
 p {
     font-size: 1.2em;
+      padding: 0px;
+      margin-top: 0px;
   }
 
 .highlight {
   background-color: green;
   padding: 10px;
-  border-left: 4px solid #0077cc;
+  border-left: 4px solid white;
+  border-radius: 8px;
+  display:flex;
+  flex-direction: column;
+  max-width: 1000px;
  }
 
-
-
+.generic-box {
+   background-color: white;
+   color:black;
+   padding: 0px;
+   border-left: 4px solid #0077cc;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+   margin-bottom: 20px;
+   display:flex;
+   flex-direction: column;
+   max-width: 1000px;
+ }
 
 
 
