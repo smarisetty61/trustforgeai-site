@@ -266,9 +266,34 @@
   </div>
 </section)
 </body>
+<section id="downloads">
+  <h2>Downloadable Resources</h2>
+  <label for="docSelect">Select a document to download:</label>
+  <select id="docSelect" onchange="downloadDocument(this.value)">
+    <option value="">-- Choose a document --</option>
+    <option value="documents/Baremetal AI Enhanced Security Business Plan.pdf">Business Plan (PDF)</option>
+    <option value="documents/Baremetal AI Enhanced Security Technical Specification.pdf">Federated AI Technical Spec (PDF)</option>
+    <option value="documents/PSA Level 3 and Caliptra Root of Trust.pdf">White Paper-PSA_Caliptra (PDF)</option>
+  </select>
+</section>
+
+<script>
+  function downloadDocument(url) {
+    if (url) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = '';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  }
+</script>
+     
 </main>
 <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
   </footer>
 </html>
+
 
