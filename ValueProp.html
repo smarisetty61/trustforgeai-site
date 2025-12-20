@@ -419,77 +419,103 @@ nav a {
     <!-- 5. THREAT CLASS TABLE -->
 <section id="threat-class-table">
   <h2>Threat Classes: OS-Level vs. Bare-Metal Detection</h2>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Threat Class</th>
+      <th>OS-Level Detection</th>
+      <th>Bare-Metal Detection</th>
+      <th>OS-Level Gap</th>
+      <th>Bare-Metal Advantage</th>
+    </tr>
+  </thead>
 
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Threat Class</th>
-        <th>OS-Level Detection</th>
-        <th>Bare-Metal Detection</th>
-        <th>OS-Level Gap</th>
-        <th>Bare-Metal Advantage</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="icon-cell"><i data-feather="shield"></i></td>
-        <td>Malware / Ransomware</td>
-        <td class="os-visible">Detectable post-compromise</td>
-        <td class="bm-visible">Not primary focus</td>
-        <td class="os-gap">Cannot detect pre-boot malware</td>
-        <td class="bm-coverage">Stops boot-level persistence</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="alert-triangle"></i></td>
-        <td>Firmware Implants</td>
-        <td class="os-gap">No visibility</td>
-        <td class="bm-visible">Full visibility</td>
-        <td class="os-gap">Cannot detect firmware-level threats</td>
-        <td class="bm-coverage">Detects implants before OS loads</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="lock"></i></td>
-        <td>Bootkits / Rootkits</td>
-        <td class="os-gap">Often invisible</td>
-        <td class="bm-visible">Detectable via boot invariants</td>
-        <td class="os-gap">Rootkits can blind OS telemetry</td>
-        <td class="bm-coverage">Hardware-anchored detection</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="cpu"></i></td>
-        <td>DMA/PCIe Attacks</td>
-        <td class="os-gap">Blind</td>
-        <td class="bm-visible">Full visibility</td>
-        <td class="os-gap">Cannot observe bus-level anomalies</td>
-        <td class="bm-coverage">Detects rogue DMA/PCIe behavior</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="server"></i></td>
-        <td>Sideband Controller Abuse (BMC/ME)</td>
-        <td class="os-gap">No visibility</td>
-        <td class="bm-visible">Full visibility</td>
-        <td class="os-gap">Blind to out-of-band channels</td>
-        <td class="bm-coverage">Detects malicious sideband access</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="tool"></i></td>
-        <td>Physical Attacks</td>
-        <td class="os-gap">No visibility</td>
-        <td class="bm-visible">Detectable via tamper signals</td>
-        <td class="os-gap">Cannot detect chassis intrusion</td>
-        <td class="bm-coverage">Detects voltage, thermal, and intrusion anomalies</td>
-      </tr>
-      <tr>
-        <td class="icon-cell"><i data-feather="terminal"></i></td>
-        <td>Debug Interface Abuse</td>
-        <td class="os-gap">No visibility</td>
-        <td class="bm-visible">Detectable via hardware monitors</td>
-        <td class="os-gap">Blind to JTAG/SWD access</td>
-        <td class="bm-coverage">Detects unauthorized debug activity</td>
-      </tr>
-    </tbody>
-  </table>
+  <tbody>
+    <tr>
+      <td class="icon-cell"><i data-feather="shield"></i></td>
+      <td>Malware / Ransomware</td>
+      <td class="os-visible">Detectable post-compromise</td>
+      <td class="bm-visible">Not primary focus</td>
+      <td class="os-gap">Cannot detect pre-boot malware</td>
+      <td class="bm-coverage">Stops boot-level persistence</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="alert-triangle"></i></td>
+      <td>Firmware Implants</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Full visibility</td>
+      <td class="os-gap">Cannot detect firmware-level threats</td>
+      <td class="bm-coverage">Detects implants before OS loads</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="lock"></i></td>
+      <td>Bootkits / Rootkits</td>
+      <td class="os-gap">Often invisible</td>
+      <td class="bm-visible">Detectable via boot invariants</td>
+      <td class="os-gap">Rootkits can blind OS telemetry</td>
+      <td class="bm-coverage">Hardware-anchored detection</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="cpu"></i></td>
+      <td>DMA/PCIe Attacks</td>
+      <td class="os-gap">Blind</td>
+      <td class="bm-visible">Full visibility</td>
+      <td class="os-gap">Cannot observe bus-level anomalies</td>
+      <td class="bm-coverage">Detects rogue DMA/PCIe behavior</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="server"></i></td>
+      <td>Sideband Controller Abuse (BMC/ME)</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Full visibility</td>
+      <td class="os-gap">Blind to out-of-band channels</td>
+      <td class="bm-coverage">Detects malicious sideband access</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="tool"></i></td>
+      <td>Physical Attacks</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Detectable via tamper signals</td>
+      <td class="os-gap">Cannot detect chassis intrusion</td>
+      <td class="bm-coverage">Detects voltage, thermal, and intrusion anomalies</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="terminal"></i></td>
+      <td>Debug Interface Abuse</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Detectable via hardware monitors</td>
+      <td class="os-gap">Blind to JTAG/SWD access</td>
+      <td class="bm-coverage">Detects unauthorized debug activity</td>
+    </tr>
+
+    <!-- NEW ROWS BELOW -->
+
+    <tr>
+      <td class="icon-cell"><i data-feather="activity"></i></td>
+      <td>Side-Channel Leakage (Timing / Power / Cache)</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Partial visibility via hardware telemetry</td>
+      <td class="os-gap">Cannot observe microarchitectural leakage</td>
+      <td class="bm-coverage">Detects timing, power, and cache anomalies</td>
+    </tr>
+
+    <tr>
+      <td class="icon-cell"><i data-feather="zap-off"></i></td>
+      <td>Fault-Injection Attacks (Voltage / Clock / EM)</td>
+      <td class="os-gap">No visibility</td>
+      <td class="bm-visible">Full visibility during early-boot and firmware execution</td>
+      <td class="os-gap">Cannot detect glitch-induced instruction skips</td>
+      <td class="bm-coverage">Detects voltage, timing, and boot-path irregularities</td>
+    </tr>
+  </tbody>
+</table>
 </section>
     <!-- 6. QUANTIFYING SECURITY BENEFIT -->
     <section id="quantifying-security-benefit">
@@ -550,6 +576,7 @@ nav a {
   </footer>
 </body>
 </html>
+
 
 
 
