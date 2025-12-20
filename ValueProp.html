@@ -128,9 +128,22 @@ nav a {
     <!-- 1. Problem Statement -->
     <section id="problem-statement">
       <h2>Problem statement</h2>
-      <p>
-        Modern platforms face a growing class of threats that operate below the visibility of traditional OS‑centric security tools. Zero‑day exploits, firmware tampering, sideband abuse, and hardware‑level attacks increasingly drive the highest‑impact incidents—persisting beneath the OS, evading detection, and undermining platform trust. Without hardware‑rooted telemetry and bare‑metal learning, organizations remain blind to the layers where modern attackers now operate.
-      </p>
+     <p>
+    Modern platforms face a rapidly expanding class of below‑OS threats that traditional 
+    OS‑centric security tools cannot see or quantify. Zero‑day exploits, firmware tampering, 
+    sideband controller abuse, hardware‑level manipulation, and persistent implants now drive 
+    the highest‑impact incidents—operating beneath the operating system, evading EDR, and 
+    eroding platform trust across entire fleets.
+  </p>
+
+  <p>
+    Side‑channel leakage and fault‑injection attacks further widen this blind spot. These 
+    techniques create subtle anomalies in timing, power, cache behavior, and early‑boot 
+    execution—signals that OS‑level tools are fundamentally unable to observe. 
+    Bare‑metal federated learning restores this missing visibility by learning normal hardware 
+    and firmware patterns across the fleet and detecting deviations that indicate leakage, 
+    glitching, tampering, or early‑boot compromise.
+  </p>
 <div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
   <img src="assets\projected-attack-dist.png" alt="Diagram 3" style="max-width: 75%; height: auto;" />
 </div>
@@ -572,6 +585,7 @@ nav a {
   </footer>
 </body>
 </html>
+
 
 
 
