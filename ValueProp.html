@@ -135,17 +135,6 @@ nav a {
   <img src="assets\projected-attack-dist.png" alt="Diagram 3" style="max-width: 75%; height: auto;" />
 </div>
     </section>
-
-    <!-- 2. Defense in Depth -->
-    <section id="defense-in-depth">
-      <h2>Defense in depth across OS and bare metal</h2>
-      <p>OS-level and bare-metal defenses complement each other but have fundamentally different visibility.</p>
-    </section>
-
-<div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
-  <img src="assets\dfd-1.png" alt="Diagram 1" style="max-width: 45%; height: auto;" />
-  <img src="assets\dfd-2.png" alt="Diagram 2" style="max-width: 45%; height: auto;" />
-</div>
 <section id="problem-scope">
   <h2>Scope of the Problem</h2>
   <p>
@@ -177,7 +166,95 @@ nav a {
     reliability, accelerating time‑to‑market, and protecting revenue.
   </p>
 </section>
-	  
+    <!-- 2. Defense in Depth -->
+    <section id="defense-in-depth">
+      <h2>Defense in depth across OS and bare metal</h2>
+      <p>OS-level and bare-metal defenses complement each other but have fundamentally different visibility.</p>
+    </section>
+
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+  <img src="assets\dfd-1.png" alt="Diagram 1" style="max-width: 45%; height: auto;" />
+  <img src="assets\dfd-2.png" alt="Diagram 2" style="max-width: 45%; height: auto;" />
+</div>
+<section id="visual-funnel">
+  <h2>Where Modern Threats Concentrate — and Where Visibility Collapses</h2>
+
+  <div class="funnel-container">
+
+    <div class="funnel-stage stage-top">
+      <h3>Full Threat Landscape</h3>
+      <p>OS attacks, N‑day exploits, zero‑days, firmware tampering, sideband abuse, hardware faults</p>
+    </div>
+
+    <div class="funnel-stage stage-middle">
+      <h3>What OS-Centric Security Can See</h3>
+      <p>Processes, system calls, userland malware, some kernel activity</p>
+    </div>
+
+    <div class="funnel-stage stage-bottom">
+      <h3>Where High-Impact Attacks Actually Occur</h3>
+      <p>Firmware implants, bootkits, BMC/ME abuse, DMA/PCIe attacks, physical/debug exploitation</p>
+    </div>
+
+    <div class="funnel-stage stage-solution">
+      <h3>What Bare-Metal FL Restores</h3>
+      <p>Hardware-rooted telemetry, early-boot visibility, sideband monitoring, fleet-wide anomaly learning</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #visual-funnel {
+    margin-top: 2rem;
+  }
+
+  .funnel-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .funnel-stage {
+    text-align: center;
+    color: #fff;
+    padding: 1.2rem;
+    margin: 0.8rem auto;
+    border-radius: 6px;
+  }
+
+  .stage-top {
+    width: 100%;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+  }
+
+  .stage-middle {
+    width: 75%;
+    background: linear-gradient(to bottom, #1e40af, #2563eb);
+  }
+
+  .stage-bottom {
+    width: 50%;
+    background: linear-gradient(to bottom, #1e3a8a, #1d4ed8);
+  }
+
+  .stage-solution {
+    width: 65%;
+    background: linear-gradient(to bottom, #059669, #10b981);
+    margin-top: 1.5rem;
+  }
+
+  .funnel-stage h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .funnel-stage p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+</style>
+
+  
     <!-- 3. BUSINESS IMPACT SECTION -->
     <section id="business-impact">
       <h2>Business Benefits of Bare-Metal Federated Learning</h2>
@@ -437,5 +514,6 @@ nav a {
   </footer>
 </body>
 </html>
+
 
 
