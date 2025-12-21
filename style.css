@@ -66,6 +66,7 @@ p {
     font-size: 1.2em;
       padding: 0px;
       margin-top: 0px;
+      text-align: left;
   }
 
 .highlight {
@@ -109,6 +110,7 @@ p {
 li {
   text-align: left;
 }
+
 
 
 
