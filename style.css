@@ -20,7 +20,8 @@ body {
 
 section {
   margin: 40px auto;
-  max-width: 600px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 h1 {
     font-size: 2.5em;
@@ -111,6 +112,7 @@ p {
 li {
   text-align: left;
 }
+
 
 
 
