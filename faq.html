@@ -105,7 +105,33 @@
         <h2>Do you support PSA Certified workflows?</h2>
         <p>Yes. Our platform architecture and event schemas are designed to support PSA Certified Level 1 and Level 2 workflows, including secure provisioning, firmware measurement, and runtime telemetry.</p>
       </section>
-
+      <section class="generic-box">
+<h2>What is threat modeling and how does it apply to this solution?</h2>
+    <p>
+        Threat modeling is a structured process used to identify, analyze, and prioritize the ways a 
+        system can be attacked. It helps teams understand their most valuable assets, the potential 
+        threats against them, the severity of those threats, and the mitigations required to reduce 
+        risk. Threat modeling is a foundational step in modern security frameworks, including Arm’s 
+        Platform Security Architecture (PSA), where it guides decisions on how robust a device’s 
+        security must be.
+    </p>
+    <p>
+        In the context of our solution, threat modeling plays a critical role in shaping how 
+        below‑OS attacks are detected and mitigated. By mapping out the threat landscape across 
+        firmware, hardware, and sideband interfaces, we ensure that our federated AI models learn 
+        from the right telemetry signals and focus on the attack vectors that matter most. This 
+        alignment allows the system to detect early‑boot manipulation, sideband abuse, hardware 
+        implants, and other below‑OS threats that traditional OS‑level tools cannot observe.
+    </p>
+    <p>
+        For a deeper introduction to the methodology, see 
+        <a href="https://developer.arm.com/community/arm-community-blogs/b/internet-of-things-blog/posts/five-steps-to-successful-threat-modelling" 
+           target="_blank">
+           Five Steps to Successful Threat Modelling by Suresh Marisetty
+        </a>, 
+        published on the Arm Developer site.
+    </p>
+  </section>
   </main>
   <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
@@ -113,4 +139,5 @@
 </body>
 
 </html>
+
 
