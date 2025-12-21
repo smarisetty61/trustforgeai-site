@@ -105,33 +105,38 @@
         <h2>Do you support PSA Certified workflows?</h2>
         <p>Yes. Our platform architecture and event schemas are designed to support PSA Certified Level 1 and Level 2 workflows, including secure provisioning, firmware measurement, and runtime telemetry.</p>
       </section>
-      <section class="generic-box">
 <h2>What is threat modeling and how does it apply to this solution?</h2>
     <p>
-        Threat modeling is a structured process used to identify, analyze, and prioritize the ways a 
-        system can be attacked. It helps teams understand their most valuable assets, the potential 
-        threats against them, the severity of those threats, and the mitigations required to reduce 
-        risk. Threat modeling is a foundational step in modern security frameworks, including Arm’s 
-        Platform Security Architecture (PSA), where it guides decisions on how robust a device’s 
-        security must be.
-    </p>
-    <p>
-        In the context of our solution, threat modeling plays a critical role in shaping how 
-        below‑OS attacks are detected and mitigated. By mapping out the threat landscape across 
-        firmware, hardware, and sideband interfaces, we ensure that our federated AI models learn 
-        from the right telemetry signals and focus on the attack vectors that matter most. This 
-        alignment allows the system to detect early‑boot manipulation, sideband abuse, hardware 
-        implants, and other below‑OS threats that traditional OS‑level tools cannot observe.
-    </p>
-    <p>
-        For a deeper introduction to the methodology, see 
+        Threat modeling is the process of identifying and prioritizing how a system can be attacked. 
+        For this solution, it ensures our federated AI focuses on the highest‑value firmware, hardware, 
+        and sideband attack vectors—enabling accurate detection of below‑OS threats that OS‑level tools 
+        miss. For a deeper overview, see 
         <a href="https://developer.arm.com/community/arm-community-blogs/b/internet-of-things-blog/posts/five-steps-to-successful-threat-modelling" 
-           target="_blank">
-           Five Steps to Successful Threat Modelling by Suresh Marisetty
-        </a>, 
-        published on the Arm Developer site.
+           target="_blank">Five Steps to Successful Threat Modelling by Suresh Marisetty</a>.
     </p>
   </section>
+
+<section class="generic-box">
+    <div class="faq-item">
+        <h2>How does the learning model for new threats map to static threat modeling?</h2>
+        <p>
+            Threat modeling defines the static attack surfaces and assets that matter most, and our 
+            learning model builds on that foundation by continuously detecting real‑world deviations 
+            along those same threat paths. In practice, the threat model defines <em>what to watch</em>, 
+            and the federated AI learns <em>how those threats evolve</em>, allowing the system to adapt to 
+            new below‑OS attack behaviors while staying aligned with the original security assumptions.
+        </p>
+    </div>
+</section>
+
+ <section class="generic-box">
+<h2>How is Quantum readiness addressed?</h2>
+    <p>
+        Our solution is Quantum ready because its hardware‑anchored federated AI architecture 
+        seamlessly adopts the orthogonal evolution of post‑quantum cryptography (PQC), ensuring 
+        long‑term resilience as cryptographic standards transition to quantum‑safe algorithms.
+    </p>
+</section>
   </main>
   <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
@@ -139,5 +144,6 @@
 </body>
 
 </html>
+
 
 
