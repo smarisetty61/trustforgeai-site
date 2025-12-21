@@ -7,6 +7,20 @@ body {
   padding-top: 20px;
   padding: 20px;
 }
+/* Transparent overlay watermark on top of all content */
+body::after {
+    content: "TOP SECRET";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.15); /* transparent red */
+    z-index: 9999;               /* on top of everything */
+    pointer-events: none;        /* does not block clicks */
+    white-space: nowrap;
+}
 
 .logo {
   width: 120px;
@@ -112,6 +126,7 @@ p {
 li {
   text-align: left;
 }
+
 
 
 
