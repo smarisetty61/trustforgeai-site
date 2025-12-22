@@ -138,6 +138,142 @@
         long‑term resilience as cryptographic standards transition to quantum‑safe algorithms.
     </p>
 </section>
+
+<section class="generic-box">
+    <div class="faq-item">
+        <h2>What types of adversaries exist and what threats do they pose?</h2>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Adversary Type</th>
+                    <th>Description</th>
+                    <th>Primary Threats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Opportunistic Attackers</td>
+                    <td>Low-skill actors exploiting common vulnerabilities</td>
+                    <td>Malware, phishing, credential theft, automated scans</td>
+                </tr>
+                <tr>
+                    <td>Organized Cybercriminals</td>
+                    <td>Profit-driven groups with tools and infrastructure</td>
+                    <td>Ransomware, data theft, extortion, supply-chain compromise</td>
+                </tr>
+                <tr>
+                    <td>Insider Threats</td>
+                    <td>Employees or partners with legitimate access</td>
+                    <td>Data exfiltration, sabotage, privilege misuse</td>
+                </tr>
+                <tr>
+                    <td>Advanced Persistent Threats (APTs)</td>
+                    <td>Skilled, well-funded, often state-aligned groups</td>
+                    <td>Stealthy persistence, firmware compromise, espionage</td>
+                </tr>
+                <tr>
+                    <td>Nation-State Actors</td>
+                    <td>Government-backed offensive cyber units</td>
+                    <td>Zero-days, hardware implants, destructive operations</td>
+                </tr>
+                <tr>
+                    <td>Hacktivists</td>
+                    <td>Ideology-driven attackers</td>
+                    <td>DDoS, data leaks, defacement, reputational damage</td>
+                </tr>
+                <tr>
+                    <td>Hardware Adversaries</td>
+                    <td>Attackers with physical or supply-chain access</td>
+                    <td>Firmware tampering, side-channel attacks, chip manipulation</td>
+                </tr>
+                <tr>
+                    <td>Script Kiddies</td>
+                    <td>Low-skill individuals using public tools</td>
+                    <td>Basic exploitation, brute-force attempts</td>
+                </tr>
+                <tr>
+                    <td>Supply-Chain Adversaries</td>
+                    <td>Compromised vendors or dependencies</td>
+                    <td>Trojanized updates, dependency poisoning</td>
+                </tr>
+                <tr>
+                    <td>AI-Driven Adversaries</td>
+                    <td>Attackers using automation and ML</td>
+                    <td>Adaptive malware, automated phishing, evasion techniques</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="generic-box">
+    <div class="faq-item">
+        <h2>How do STRIDE attack types map to different adversaries?</h2>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>STRIDE Category</th>
+                    <th>Attack Type</th>
+                    <th>Description</th>
+                    <th>Example Threats</th>
+                    <th>Common Adversaries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S – Spoofing</td>
+                    <td>Identity Attacks</td>
+                    <td>Impersonating a user, device, or service to gain unauthorized access.</td>
+                    <td>Credential theft, fake device identity, session hijacking</td>
+                    <td>Opportunistic attackers, cybercriminals, APTs, AI‑driven adversaries</td>
+                </tr>
+
+                <tr>
+                    <td>T – Tampering</td>
+                    <td>Data/Code Manipulation</td>
+                    <td>Unauthorized modification of data, firmware, or system components.</td>
+                    <td>Firmware tampering, config corruption, supply‑chain code injection</td>
+                    <td>APTs, nation‑state actors, hardware adversaries, supply‑chain attackers</td>
+                </tr>
+
+                <tr>
+                    <td>R – Repudiation</td>
+                    <td>Action Denial</td>
+                    <td>Performing actions without accountability or auditability.</td>
+                    <td>Log deletion, forged audit trails, denial of performed operations</td>
+                    <td>Insiders, cybercriminals, APTs</td>
+                </tr>
+
+                <tr>
+                    <td>I – Information Disclosure</td>
+                    <td>Data Exposure</td>
+                    <td>Unauthorized access to sensitive information.</td>
+                    <td>Key leakage, telemetry exposure, side‑channel extraction</td>
+                    <td>APTs, nation‑state actors, hardware adversaries, AI‑driven adversaries</td>
+                </tr>
+
+                <tr>
+                    <td>D – Denial of Service</td>
+                    <td>Service Disruption</td>
+                    <td>Making a system or component unavailable or unstable.</td>
+                    <td>Resource exhaustion, boot‑looping, flooding attacks</td>
+                    <td>Hacktivists, cybercriminals, script kiddies, nation‑state actors</td>
+                </tr>
+
+                <tr>
+                    <td>E – Elevation of Privilege</td>
+                    <td>Unauthorized Privilege Gain</td>
+                    <td>Gaining higher access rights than intended.</td>
+                    <td>Privilege escalation, bypassing secure boot, root‑level compromise</td>
+                    <td>APTs, nation‑state actors, insiders, hardware adversaries</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>  
+       
   </main>
   <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
@@ -145,6 +281,7 @@
 </body>
 
 </html>
+
 
 
 
