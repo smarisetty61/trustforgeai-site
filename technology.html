@@ -95,6 +95,76 @@
         <li><strong>Platform RoT:</strong> Central trust anchor validating model integrity and telemetry authenticity</li>
       </ul>
     </section>
+<section class="generic-box">
+    <div class="faq-item">
+        <h2>How does the Federated AI model map to STRIDE?</h2>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>STRIDE Category</th>
+                    <th>Federated AI Mapping</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S – Spoofing</td>
+                    <td>
+                        Learns identity‑related anomalies from device attestation, boot measurements, 
+                        and hardware‑rooted identity signals to detect fake devices, impersonation, 
+                        and unauthorized access attempts.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>T – Tampering</td>
+                    <td>
+                        Models firmware, boot‑path, and configuration integrity patterns to detect 
+                        unauthorized modifications, supply‑chain code injection, and below‑OS 
+                        manipulation attempts.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>R – Repudiation</td>
+                    <td>
+                        Uses telemetry anchors and cryptographically validated event streams to learn 
+                        deviations in auditability, missing logs, forged events, or attempts to erase 
+                        operational traces.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>I – Information Disclosure</td>
+                    <td>
+                        Learns side‑channel and telemetry leakage patterns, detecting abnormal access 
+                        to sensitive data, key‑handling anomalies, and unauthorized extraction behavior.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D – Denial of Service</td>
+                    <td>
+                        Models resource‑usage baselines across CPU, memory, power, and boot flows to 
+                        detect early‑boot DoS, flooding, starvation, and hardware‑level instability 
+                        patterns.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E – Elevation of Privilege</td>
+                    <td>
+                        Learns deviations in privilege transitions, secure‑boot bypass attempts, 
+                        firmware escalation paths, and hardware‑level privilege abuse that OS‑level 
+                        tools cannot observe.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
   </main>
   <footer>
     &copy; 2025 TrustForgeAI&trade;. All rights reserved.
@@ -102,4 +172,5 @@
 </body>
 
 </html>
+
 
