@@ -6,6 +6,8 @@ body {
   text-align: center;
   padding-top: 20px;
   padding: 20px;
+  position: relative;
+  z-index: 0;
 }
 /* Transparent overlay watermark on top of all content */
 body::after {
@@ -99,7 +101,7 @@ p {
    background-color: white;
    color:black;
    padding: 0px;
-   border-left: 4px solid #0077cc;
+   border-left: 8px;
    border-radius: 8px;
    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
    margin-bottom: 20px;
@@ -126,6 +128,7 @@ p {
 li {
   text-align: left;
 }
+
 
 
 
