@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("nav").innerHTML = `
         <a href="index.html">Home</a>
-        <a href="technology.html">Technology</a>
-        <a href="ValueProp.html">Value Proposition</a>
+        <a href="ValueProp.html">Value Proposition</a> 
+        <a href="technology.html">Architecture-Solution</a>
         <a href="products.html">Products</a>
         <a href="team.html">Team</a>
         <a href="about.html">About</a>
@@ -13,5 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="NDA.html">NDA</a>
     `;
 });
+
 
 
